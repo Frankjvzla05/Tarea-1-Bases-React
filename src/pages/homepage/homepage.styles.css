@@ -1,0 +1,17 @@
+.homepage {
+    display: flex;
+    justify-content: center;
+}
+.infoText{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-size: 44px;
+    top: 30%;
+    right: 15%;    
+}
+@media only screen and (max-width: 40em) {
+    .infoText{
+     left: 15%;
+    }
+}
