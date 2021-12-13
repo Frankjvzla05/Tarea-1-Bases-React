@@ -1,6 +1,7 @@
 import React from "react";
 import "./homepage.styles.css";
-import homeImg from "../../assets/f22-ratings-hub-bg-xl.jpg.adapt.1920w.jpg";
+import { Link } from "react-router-dom";
+import homeImg from "../../assets/f22-ratings-tarea.jpg";
 
 const HomePage = () => {
   return (
@@ -9,6 +10,11 @@ const HomePage = () => {
 
       <div className="infoText">
         <p>Valoraciones de FIFA 22</p>
+        <div className="optionPlayerPage">
+          <Link className="option" to="/players">
+            Ver jugadores
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -8,8 +8,7 @@ const PlayerPreview = ({ title, items }) => (
   <div className="player-preview">
     <h1 className="title">{title}</h1>
     <div className="preview">
-      {items
-        .filter((item, idx) => idx)
+      {items        
         .map(({ id, ...otherItemProps }) => (
           <InfoDataPlayer key={id} {...otherItemProps} />
         ))}
